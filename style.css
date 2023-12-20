@@ -1,0 +1,255 @@
+*{
+    padding:0;
+    margin: 0px;
+    box-sizing:border-box;
+
+}
+body{
+    height:40rem;
+    background-image: linear-gradient(
+    to right,
+    #f5f548,
+    #f8ea47,
+    #f0d465,
+    #f0d465,
+    #e7bf7c,
+    #ddaa8f,
+    #d095a1,
+    #c280b2,
+    #b26cc2,
+    #9d56d2,
+    #8440e1,
+    #6028f0,
+    #5050f6
+  )
+}
+.container{
+    max-width:80%;
+    margin:10px auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background: #7f339d;
+    padding:20px;
+    height:auto;
+    border-radius:.5rem;
+    box-shadow:-1px 4px 2px rgb(39, 38, 38);
+    
+}
+
+.container h3{
+    text-align: center;
+    font-size:2rem;
+    color:white;
+    padding:0;
+}
+.container p{
+    text-align: center;
+    text-transform: capitalize;
+    color:burlywood;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    text-shadow: -1px -1px 1px rgb(255, 0, 0);
+}
+label{
+  padding:10px;
+  color:white;
+}
+.name{
+    
+    width:80%;
+    border:none;
+    border-radius: .5rem;
+    padding:5px;
+    font-size:1rem;
+    padding-left:6px;
+
+}
+.name:focus{
+    outline:none;
+    border:1px solid rgb(0, 168, 48);
+  }
+pre{
+    padding-left:5px;
+    margin-top:22px;
+    font-size:1.1rem;
+    color:rgb(227, 195, 195);
+}
+.gender{
+    margin:6px;
+    margin-bottom: 20px;
+}
+.email{
+    margin: 5px 0;
+    width:80%;
+    padding:5px;
+    padding-left:6px;
+    border:none;
+    border-radius:.5rem;
+    margin-bottom:20px;
+    font-size:1rem;
+}
+.email:focus{
+  outline:none;
+  border:1px solid rgb(0, 168, 48);
+}
+.phn{
+    margin: 5px 0;
+    width:80%;
+    padding:5px;
+    padding-left:6px;
+    border:none;
+    border-radius:.5rem;
+    margin-bottom:20px;
+    font-size:1rem;
+}
+.phn:focus{
+    outline:none;
+    border:1px solid rgb(0, 168, 48);
+  }
+
+
+textarea{
+    width:80%;
+    padding:5px;
+    padding-left:8px;
+    border:none;
+    border-radius:.5rem;
+    margin-bottom:20px;
+    margin-top:13px;
+    font-size:1.3rem;
+    margin-left:10px;
+    outline: none;
+    color:green;
+}
+.btn
+{
+    width:20%;
+    float:right;
+    padding:10px;
+    margin:5px 0;
+    border-radius:.5rem;
+    border:none;
+    font-weight:600;
+    font-size:1.5rem;
+}
+.btn:hover{
+    border:1px solid green;
+    color:green;
+    font-weight:700;
+}
+.reset{
+    width:20%;
+    float:left;
+    padding:10px;
+    margin:5px 0;
+    border-radius:.5rem;
+    border:none;
+    font-weight:600;
+    font-size:1.5rem;
+}
+.reset:hover{
+    border:1px solid rgb(255, 5, 5);
+    background: #fdfffd;
+    color:red;
+    font-weight:700;
+}
+.dob{
+    margin: 5px 0;
+    width:25%;
+    padding:5px;
+    padding-left:6px;
+    border:none;
+    border-radius:.5rem;
+    margin-bottom:20px;
+    margin-left:10px;
+    font-size:1rem;
+}
+.box{
+    position:absolute;
+    border:0px solid black;
+    width:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background: linear-gradient(90deg, rgb(63, 61, 101) 0%, rgb(28, 28, 192) 35%, rgba(0,212,255,1) 100%);
+    padding:50px;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    box-shadow:5px 1px 1px rgb(249, 235, 235);
+    transition: all linear 2s;
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+.body{
+    background-image:
+    linear-gradient(
+      to right, 
+      rgb(226, 67, 67), 
+      rgb(26, 124, 223), 
+      rgb(200, 14, 128)
+    );
+}
+@keyframes move{
+    from{
+        transform:scale(1);
+
+    }
+    to{
+        transform: scale(1) rotateX(360deg) translate(-50%,-50%);
+    }
+}
+
+.box h2{
+    padding:10px;
+    letter-spacing: 2px;
+    margin:3px;
+    color:white;
+}
+.box h2 a{
+    padding-left: 10px;
+    color: rgba(147, 150, 0, 0.61);
+    text-shadow:2px 1px 2px rgb(0, 0, 0);
+}
+
+
+@media (max-width: 550px) {
+    .container{
+        margin:0;
+        width:80%;
+    }
+    .btn{
+        width:auto;
+    }
+    .reset{
+        width:auto;
+    }
+    .dob{
+        width:50%;
+    }
+    .container h3{
+        color:rgb(43, 255, 0);
+    }
+
+}
+@media (max-width: 300px){
+    body{
+        height:30rem;
+        font-size:.7rem;
+    }
+    .container{
+        height:90%;
+        margin:auto;
+    }
+    .btn{
+        font-size:1rem;
+    }
+    .reset{
+        font-size:1rem;
+    }
+
+}
